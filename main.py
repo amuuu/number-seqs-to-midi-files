@@ -3,7 +3,7 @@ from midiutil import MIDIFile
 
 
 seq_type = 2 # 1=fibonacci, 2=prime
-index = 256 # number of notes in the file and sequences
+index = 3000 # number of notes in the file and sequences
 duration = 0.5 # of each note in a half bar
 tempo =  120
 
@@ -56,6 +56,7 @@ def write_to_midi_file(notes_list):
         MyMIDI.writeFile(output_file)
 
 if __name__ == "__main__":
+    print("Writing...")
     math_seq = []
     if seq_type == 1:
         math_seq = fibonacci_seq(index)
@@ -63,8 +64,6 @@ if __name__ == "__main__":
         math_seq = prime_seq(index)
     
     notes = generate_notes_list(math_seq)
-
-    print(math_seq)
-    print(notes)
     
     write_to_midi_file(notes)    
+    print("Successfully created the midi file...")
