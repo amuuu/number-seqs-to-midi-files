@@ -57,6 +57,7 @@ def write_to_midi_file(notes_list, file_name):
 
 if __name__ == "__main__":
     print("Writing...")
+    
     math_seq = []
     if seq_type == 1:
         math_seq = fibonacci_seq(index)
