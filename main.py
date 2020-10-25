@@ -2,8 +2,8 @@ import math
 from midiutil import MIDIFile
 
 
-seq_type = 2 # 1=fibonacci, 2=prime
-index = 5000 # number of notes in the file and sequences
+seq_type = 1 # 1=fibonacci, 2=prime
+index = 200 # number of notes in the file and sequences
 duration = 0.5 # of each note in a half bar
 tempo =  120
 
@@ -52,7 +52,7 @@ def write_to_midi_file(notes_list, file_name):
     for i, pitch in enumerate(notes_list):
         MyMIDI.addNote(track, channel, pitch, (time + i)*duration, duration, volume)
 
-    with open("{}.mid".format(file_name), "wb") as output_file:
+    with open("results/{}.mid".format(file_name), "wb") as output_file:
         MyMIDI.writeFile(output_file)
 
 if __name__ == "__main__":
