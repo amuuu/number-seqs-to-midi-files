@@ -2,13 +2,13 @@ import math
 from midiutil import MIDIFile
 
 
-seq_type = 1 # 1=fibonacci, 2=prime
-index = 3000 # number of notes in the file and sequences
+seq_type = 2 # 1=fibonacci, 2=prime
+index = 5000 # number of notes in the file and sequences
 duration = 0.5 # of each note in a half bar
 tempo =  120
 
-octave_numbers = 2
-base_note = 48 # C2=36, C3=48, C4=60, C5=72
+octave_numbers = 7
+base_note = 36 # C2=36, C3=48, C4=60, C5=72
 
 
 total_notes_number = octave_numbers * 12
