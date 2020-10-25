@@ -7,4 +7,4 @@ Here are two cool results from the program:
 
 ![Fibonacci Sequence In MIDI](photos/fibo1920x1080.jpg?raw=true "Fibonacci Sequence In MIDI")
 
-![First 5000 Prime Numbers in MIDI](photos/fibo1920x1080.jpg?raw=true "First 5000 Prime Numbers in MIDI")
+![First 5000 Prime Numbers in MIDI](photos/primes1920x1080.jpg?raw=true "First 5000 Prime Numbers in MIDI")
